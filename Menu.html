@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sol Azteca | Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="Images/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="Style/main.css" />
+    <link rel="stylesheet" type="text/css" href="Style/Menu.css" />
+    <link rel="stylesheet" type="text/css" href="Style/Dropdown.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="Script/LoadHeaderFooter.js"></script>
+    <script src="Script/LoadMainMenu.js"></script>
+    <script src="Script/DropdownMenu.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="content">
+        <div id="menuContainer">
+            <a name="top"></a>
+            <div class="listDescription">
+                <div id="menuHeaderText">MENU</div>
+                <div class="dropdownContainer">
+                    <button id="jumpToBtn" onclick="DisplayDropdownOptions()" class="dropbtn">Jump to... &nbsp;&nbsp; &#9660;</button>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a class="dropdownLink" href="#appetizers">Appetizers</a>
+                        <a class="dropdownLink" href="#salads">Salads</a>
+                        <a class="dropdownLink" href="#beef">Beef</a>
+                        <a class="dropdownLink" href="#seafood">Seafood</a>
+                        <a class="dropdownLink" href="#pork">Pork</a>
+                        <a class="dropdownLink" href="#mixed">Mixed</a>
+                        <a class="dropdownLink" href="#chicken">Chicken</a>
+                        <a class="dropdownLink" href="#platillos">Platillos</a>
+                        <a class="dropdownLink" href="#fajitas">Fajitas</a>
+                        <a class="dropdownLink" href="#nachos">Nachos</a>
+                        <a class="dropdownLink" href="#vegetarian">Vegetarian</a>
+                        <a class="dropdownLink" href="#combinations">Combinations</a>
+                        <a class="dropdownLink" href="#kids">Kids</a>
+                        <a class="dropdownLink" href="#desserts">Desserts</a>
+                    </div>
+                </div>
+            </div>
+
+            <a name="appetizers"></a>
+            <div class="appetizers foodBG">
+                <div class="bgHeaders">APPETIZERS</div>
+            </div>
+            <div id="appetizersList" class="listDescription"></div>
+            <a name="salads"></a>
+            <div class="salads foodBG">
+                <div class="bgHeaders">SALADS</div>
+            </div>
+            <div id="saladsList" class="listDescription"></div>
+            <a name="beef"></a>
+            <div class="beef foodBG">
+                <div class="bgHeaders">BEEF</div>
+            </div>
+            <div id="beefList" class="listDescription"></div>
+            <a name="seafood"></a>
+            <div class="seafood foodBG">
+                <div class="bgHeaders">SEAFOOD</div>
+            </div>
+            <div id="seafoodList" class="listDescription"></div>
+            <a name="pork"></a>
+            <div class="pork foodBG">
+                <div class="bgHeaders">PORK</div>
+            </div>
+            <div id="porkList" class="listDescription"></div>
+            <a name="mixed"></a>
+            <div class="mixed foodBG">
+                <div class="bgHeaders">MIXED</div>
+            </div>
+            <div id="mixedList" class="listDescription"></div>
+            <a name="chicken"></a>
+            <div class="chicken foodBG">
+                <div class="bgHeaders">CHICKEN</div>
+            </div>
+            <div id="chickenList" class="listDescription"></div>
+            <a name="platillos"></a>
+            <div class="three-tacos foodBG">
+                <div class="bgHeaders">PLATILLOS MEXICANOS</div>
+            </div>
+            <div id="platillosList" class="listDescription"></div>
+            <a name="fajitas"></a>
+            <div class="fajitas foodBG">
+                <div class="bgHeaders">FAJITAS</div>
+            </div>
+            <div id="fajitasList" class="listDescription"></div>
+            <a name="nachos"></a>
+            <div class="nachos foodBG">
+                <div class="bgHeaders">NACHOS</div>
+            </div>
+            <div id="nachosList" class="listDescription"></div>
+            <a name="vegetarian"></a>
+            <div class="vegetarian foodBG">
+                <div class="bgHeaders">VEGETARIAN</div>
+            </div>
+            <div id="vegetarianList" class="listDescription"></div>
+            <a name="combinations"></a>
+            <div class="combos foodBG">
+                <div class="bgHeaders">COMBINATIONS</div>
+            </div>
+            <div id="combosList" class="listDescription"></div>
+            <a name="kids"></a>
+            <div class="kids foodBG">
+                <div class="bgHeaders">KIDS MENU</div>
+            </div>
+            <div id="kidsList" class="listDescription"></div>
+            <a name="desserts"></a>
+            <div class="desserts foodBG">
+                <div class="bgHeaders">DESSERTS</div>
+            </div>
+            <div id="dessertsList" class="listDescription"></div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

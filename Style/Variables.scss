@@ -1,0 +1,8 @@
+// VARIABLES
+$exoFont: 'Exo', sans-serif;
+$brieFont: 'Bree Serif', serif;
+$defaultFont: 'Ubuntu', sans-serif;
+$headerHeight: 200px;
+$footerColor: #fc007c;
+$footerHeight: 100px;
+$contentMinHeight: calc(100vh - #{$footerHeight} - #{$headerHeight});

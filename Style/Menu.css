@@ -1,0 +1,126 @@
+body {
+  overflow: scroll;
+  overflow-x: hidden;
+  font-family: "Ubuntu", sans-serif; }
+
+.backToTop {
+  align-self: flex-start;
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  padding-top: 20px;
+  width: 110px;
+  color: white; }
+
+.listDescription {
+  min-height: 300px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px; }
+
+.listContainer {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.listItemContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.leftListColumn {
+  width: 450px; }
+
+.rightListColumn {
+  width: 450px; }
+
+.listItem {
+  width: 300px;
+  word-wrap: break-word;
+  margin: 15px; }
+
+.itemName {
+  font-family: "Exo", sans-serif;
+  font-size: 30px;
+  color: #fc007c; }
+
+.itemPrice {
+  text-align: right;
+  color: lawngreen; }
+
+.foodBG {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bree Serif", serif;
+  font-size: 60px; }
+
+.appetizers {
+  background-image: url("https://s3.amazonaws.com/tylermayberry/SolAzteca/MenuImgs/appetizers.png"); }
+
+.salads {
+  background-image: url("https://s3.amazonaws.com/tylermayberry/SolAzteca/MenuImgs/salads.png"); }
+
+.seafood {
+  background-image: url("https://s3.amazonaws.com/tylermayberry/SolAzteca/MenuImgs/seafood.png"); }
+
+.pork {
+  background-image: url("https://s3.amazonaws.com/tylermayberry/SolAzteca/MenuImgs/pork.png"); }
+
+.mixed {
+  background-image: url("https://s3.amazonaws.com/tylermayberry/SolAzteca/MenuImgs/mixed.png"); }
+
+.chicken {
+  background-image: url("https://s3.amazonaws.com/tylermayberry/SolAzteca/MenuImgs/chicken.png"); }
+
+.three-tacos {
+  background-image: url("https://s3.amazonaws.com/tylermayberry/SolAzteca/MenuImgs/3tacos.png"); }
+
+.fajitas {
+  background-image: url("https://s3.amazonaws.com/tylermayberry/SolAzteca/MenuImgs/fajitas.png"); }
+
+.nachos {
+  background-image: url("https://s3.amazonaws.com/tylermayberry/SolAzteca/MenuImgs/nachos.png"); }
+
+.vegetarian {
+  background-image: url("https://s3.amazonaws.com/tylermayberry/SolAzteca/MenuImgs/vegetarian.png"); }
+
+.kids {
+  background-image: url("https://s3.amazonaws.com/tylermayberry/SolAzteca/MenuImgs/kids.png"); }
+
+.beef {
+  background-image: url("https://s3.amazonaws.com/tylermayberry/SolAzteca/MenuImgs/beef.png"); }
+
+.combos {
+  background-image: url("https://s3.amazonaws.com/tylermayberry/SolAzteca/MenuImgs/combo.png"); }
+
+.desserts {
+  background-image: url("https://s3.amazonaws.com/tylermayberry/SolAzteca/MenuImgs/dessert.png"); }
+
+#menuHeaderText {
+  font-family: "Exo", sans-serif;
+  font-size: 110px;
+  color: darkorange; }
+
+#menuContainer {
+  min-height: calc(100vh - 100px - 200px);
+  display: flex;
+  flex-direction: column; }
+
+/* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 380px) {
+  .parallax {
+    background-attachment: scroll; } }
+
+/*# sourceMappingURL=Menu.css.map */

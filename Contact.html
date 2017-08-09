@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sol Azteca | Contact Us</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="Images/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="Style/main.css" />
+    <link rel="stylesheet" type="text/css" href="Style/Contact.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="Script/LoadHeaderFooter.js"></script>
+    <script src="Script/Contact.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="content">
+        <div id="mapContainer">
+            <div id="mapBorder">
+                <div id="map"></div>
+                <script>
+                    function initMap() {
+                        var uluru = {lat: 35.819536, lng: -78.828428};
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 15,
+                            center: uluru
+                        });
+                        var marker = new google.maps.Marker({
+                            position: uluru,
+                            map: map
+                        });
+                    }
+                </script>
+                <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLD74Sb3jgeJgmtfftaEdgAtw6-zn-K3o&callback=initMap">
+                </script>
+            </div>
+        </div>
+        <div id="storeInfoContainer">
+            <div id="storeInfo">
+                <div id="storeHeader"><span id="pink">Sol</span> <span id="green">Azteca</span></div>
+                <div id="storeAddress">120 Morrisville Square Way<br />Morrisville, NC 27560</div><br />
+                <div id="phoneNumber"><span class="bold">Phone:</span><br />(919) 465-7320</div><br />
+                <div id="hours"><span class="bold">Hours:</span><br />Mon-Thu: 11am-9pm<br />Fri-Sat: 11am-10pm<br />Sun: 4pm-9pm</div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

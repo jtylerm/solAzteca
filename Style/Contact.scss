@@ -1,0 +1,34 @@
+@import 'main';
+
+// CLASSES
+.bold {
+  font-size: 40px;
+}
+
+// IDs
+#map {
+  height: 400px;
+  width: 400px;
+  border: 15px solid darkorange;
+}
+
+#mapContainer {
+  margin: 25px 100px;
+}
+
+#storeHeader {
+  font-family: $exoFont;
+  font-size: 50px;
+}
+
+#storeAddress, #phoneNumber, #hours {
+  font-size: 25px;
+}
+
+.green {
+  color: lawngreen;
+}
+
+.pink {
+  color: $footerColor;
+}

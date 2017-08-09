@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sol Azteca | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="Images/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="Style/main.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="Script/Home.js"></script>
+    <script src="Script/LoadHeaderFooter.js"></script>
+</head>
+<body>
+    <div id="welcome">
+        <div id="welcomeHeader">SOL AZTECA</div>
+        <div class="welcomeMessage">
+            Welcome!
+        </div>
+        <button id="enterBtn">ENTER</button>
+        <div class="welcomeMessage">
+            ¡Bienvenidos!
+        </div>
+    </div>
+    <div id="header"></div>
+    <div id="content">
+        <div class="container">
+            <div class="pink" id="contentHeader"><em>"Authentic Mexican Food At A Great Price"</em></div>
+            <div id="contentImgContainer">
+                <img class="slides" src="Images/Home-Page/store-front.png" />
+                <img class="slides" src="Images/Home-Page/bar-area-1.png" />
+                <img class="slides" src="Images/Home-Page/bar-area-2.png" />
+                <img class="slides" src="Images/Home-Page/dining-area-1.png" />
+                <img class="slides" src="Images/Home-Page/dining-area-2.png" />
+                <img class="slides" src="Images/Home-Page/patio.png" />
+                <img class="slides" src="Images/Home-Page/projector.png" />
+                <div id="display-left" onclick="plusDivs(-1)"><div class="imgNavBtn">&#10094;</div></div>
+                <div id="display-right" onclick="plusDivs(1)"><div class="imgNavBtn">&#10095;</div></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
