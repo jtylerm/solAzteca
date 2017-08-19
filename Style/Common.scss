@@ -8,17 +8,12 @@ body {
   background-image: URL("https://s3.amazonaws.com/tylermayberry/SolAzteca/background-temp.jpg");
   background-repeat: repeat;
   overflow: hidden;
+  color: white;
 }
 
 a {
   text-decoration: none;
   color: white;
-}
-
-label {
-  font-size: 50px;
-  display: none;
-  width: 50px;
 }
 
 // CLASSES
@@ -36,11 +31,11 @@ label {
 }
 
 .headerNavLink {
-   font-size: 40px;
-   font-family: $brieFont;
-   padding: 0 20px;
-   color: white;
- }
+  font-size: 40px;
+  font-family: $brieFont;
+  padding: 0 20px;
+  color: white;
+}
 
 .headerNavLink:hover {
   color: darkorange;
@@ -69,8 +64,12 @@ label {
 }
 
 // IDs
-#toggle {
+#hamburgerLabel {
+  font-size: 50px;
   display: none;
+  width: 50px;
+  height: 50px;
+  margin-left: 40px;
 }
 
 #green {
@@ -134,21 +133,32 @@ label {
 #headerContainer {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: center;
 }
 
 #innerHeaderContainer {
-  display: flex;
-  justify-content: flex-end;
+  //display: flex;
+  //justify-content: flex-end;
+  display: table;
   width: 100%;
+  height: 100%;
 }
 #headerNavBarContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: table-cell;
   width: 500px;
+  //height: 100%;
+  vertical-align: middle;
+  //position: relative;
+  //float: right;
+}
+
+#innerHeaderNavBarContainer {
+  display: table-cell;
+  vertical-align: middle;
+  //height: 100%;
+  width: 100%;
 }
 
 #headerNavLinksContainer {
@@ -157,11 +167,21 @@ label {
   align-items: center;
 }
 
+#hamburgerIcon {
+  display: none;
+}
+
 #logoContainer {
-  margin-right: auto;
+  //margin-right: auto;
+  display: table-cell;
+}
+
+#logoInnerContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 #logoImg {
@@ -184,10 +204,17 @@ label {
   align-items: center;
 }
 
+#contentHeaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #contentHeader {
   font-size: 40px;
   font-family: $brieFont;
   margin-bottom: 20px;
+  text-align:center;
 }
 
 #contentImgContainer {
@@ -254,16 +281,12 @@ label {
   align-items: center;
 }
 
-#footerInnerContainer {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
 #footerInfoContainer {
   margin-right: auto;
+}
+
+#footerInfo {
+  white-space: nowrap;
 }
 
 #footerLinksContainer {
@@ -276,23 +299,141 @@ label {
 /*****************************************
 ************ MEDIA QUERIES ***************
 *****************************************/
-@media only screen and (max-width: 500px) {
-  label {
-    display: block;
+@media only screen and (max-width: 1120px) {
+  #logoName {
+    font-size: 30px;
+  }
+
+  #logoImg {
+    height: 90px;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .headerNavLink {
+    font-size: 25px;
+    padding: 0;
+  }
+
+  #hamburgerIcon {
+    display: table-cell;
+    vertical-align: middle;
     cursor: pointer;
+    font-size: 40px;
+    text-align: right;
   }
 
-  .headerNavLinksContainer {
+  #headerNavBarContainer {
+    position: relative;
+    height: 100%;
+    //display: inline-block;
+  }
+
+  #headerNavLinksContainer {
     text-align: center;
-    width: 100%;
     display: none;
+    position: absolute;
+    background: $footerColor;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9);
+    z-index: 1;
   }
 
-  .headerNavLinksContainer a {
+  #headerNavLinksContainer a {
     display: block;
   }
 
-  #toggle:checked + .headerNavLinksContainer {
-    display: block;
+  #logoInnerContainer {
+    flex-direction: column;
+  }
+
+  #logoName {
+    font-size: 30px;
+    width: 180px;
+  }
+
+  #logoImg {
+    height: 90px;
+  }
+
+  #footerLinksContainer {
+    width: 200px;
+  }
+
+  //#footerNavBarContainer {
+  //  width: 200px;
+  //}
+
+  #footerInfo {
+    //width: 120px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  #footerContainer {
+    flex-direction: column-reverse;
+  }
+
+  #footerNavBarContainer {
+    //width: 150px;
+    margin-bottom: 20px;
+  }
+
+  #footerLinksContainer {
+    justify-content: center;
+  }
+
+  #footerInfoContainer {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .slides {
+    width: 290px;
+  }
+
+  .footerNavLink {
+    padding: 0 10px;
+  }
+
+  #welcomeHeader {
+    font-size: 80px;
+    text-align: center;
+  }
+
+  #header {
+    height: $headerHeightMaxWidthSmallest;
+  }
+
+  #logoName {
+    font-size: 20px;
+    width: 120px;
+  }
+
+  #logoImg {
+    height: 70px;
+  }
+
+  #content {
+    min-height: $contentMinHeightMaxWidthSmallest;
+  }
+
+  #contentHeader {
+    font-size: 20px;
+    width: 290px;
+    word-wrap: break-word;
+    margin: 10px 0;
+  }
+
+  #footer {
+    height: 100px;
+    font-size: 15px;
+  }
+
+  #footerLinksContainer {
+    width: 200px;
   }
 }

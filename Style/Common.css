@@ -2,9 +2,15 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
+  font-family: "Ubuntu", sans-serif;
   background-image: URL("https://s3.amazonaws.com/tylermayberry/SolAzteca/background-temp.jpg");
   background-repeat: repeat;
-  overflow: hidden; }
+  overflow: hidden;
+  color: white; }
+
+a {
+  text-decoration: none;
+  color: white; }
 
 .welcomeMessage {
   text-align: center;
@@ -43,6 +49,19 @@ body {
 
 .lastLink {
   padding-right: 0; }
+
+#hamburgerLabel {
+  font-size: 50px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  margin-left: 40px; }
+
+#green {
+  color: lawngreen; }
+
+#pink {
+  color: #fc007c; }
 
 #welcome {
   width: 100vw;
@@ -90,32 +109,40 @@ body {
 
 #headerContainer {
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  height: 100%; }
 
 #innerHeaderContainer {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%; }
+  display: table;
+  width: 100%;
+  height: 100%; }
 
 #headerNavBarContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 500px; }
+  display: table-cell;
+  width: 500px;
+  vertical-align: middle; }
+
+#innerHeaderNavBarContainer {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%; }
 
 #headerNavLinksContainer {
   display: flex;
   justify-content: center;
   align-items: center; }
 
+#hamburgerIcon {
+  display: none; }
+
 #logoContainer {
-  margin-right: auto;
+  display: table-cell; }
+
+#logoInnerContainer {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  height: 100%;
+  width: 100%; }
 
 #logoImg {
   height: 150px; }
@@ -130,7 +157,11 @@ body {
 #content {
   min-height: calc(100vh - 100px - 200px);
   width: 100vw;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#contentHeaderContainer {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -138,7 +169,8 @@ body {
 #contentHeader {
   font-size: 40px;
   font-family: "Bree Serif", serif;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  text-align: center; }
 
 #contentImgContainer {
   position: relative;
@@ -197,15 +229,11 @@ body {
   justify-content: center;
   align-items: center; }
 
-#footerInnerContainer {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; }
-
 #footerInfoContainer {
   margin-right: auto; }
+
+#footerInfo {
+  white-space: nowrap; }
 
 #footerLinksContainer {
   width: 400px;
@@ -213,4 +241,103 @@ body {
   justify-content: flex-end;
   align-items: center; }
 
-/*# sourceMappingURL=main.css.map */
+/*****************************************
+************ MEDIA QUERIES ***************
+*****************************************/
+@media only screen and (max-width: 1120px) {
+  #logoName {
+    font-size: 30px; }
+
+  #logoImg {
+    height: 90px; } }
+@media only screen and (max-width: 900px) {
+  .headerNavLink {
+    font-size: 25px;
+    padding: 0; }
+
+  #hamburgerIcon {
+    display: table-cell;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 40px;
+    text-align: right; }
+
+  #headerNavBarContainer {
+    position: relative;
+    height: 100%; }
+
+  #headerNavLinksContainer {
+    text-align: center;
+    display: none;
+    position: absolute;
+    background: #fc007c;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
+    z-index: 1; }
+
+  #headerNavLinksContainer a {
+    display: block; }
+
+  #logoInnerContainer {
+    flex-direction: column; }
+
+  #logoName {
+    font-size: 30px;
+    width: 180px; }
+
+  #logoImg {
+    height: 90px; }
+
+  #footerLinksContainer {
+    width: 200px; } }
+@media only screen and (max-width: 570px) {
+  #footerContainer {
+    flex-direction: column-reverse; }
+
+  #footerNavBarContainer {
+    margin-bottom: 20px; }
+
+  #footerLinksContainer {
+    justify-content: center; }
+
+  #footerInfoContainer {
+    margin: 0; } }
+@media only screen and (max-width: 380px) {
+  .slides {
+    width: 290px; }
+
+  .footerNavLink {
+    padding: 0 10px; }
+
+  #welcomeHeader {
+    font-size: 80px;
+    text-align: center; }
+
+  #header {
+    height: 150px; }
+
+  #logoName {
+    font-size: 20px;
+    width: 120px; }
+
+  #logoImg {
+    height: 70px; }
+
+  #content {
+    min-height: calc(100vh - 100px - 150px); }
+
+  #contentHeader {
+    font-size: 20px;
+    width: 290px;
+    word-wrap: break-word;
+    margin: 10px 0; }
+
+  #footer {
+    height: 100px;
+    font-size: 15px; }
+
+  #footerLinksContainer {
+    width: 200px; } }
+
+/*# sourceMappingURL=Common.css.map */

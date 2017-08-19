@@ -3,6 +3,8 @@ $exoFont: 'Exo', sans-serif;
 $brieFont: 'Bree Serif', serif;
 $defaultFont: 'Ubuntu', sans-serif;
 $headerHeight: 200px;
+$headerHeightMaxWidthSmallest: 150px;
 $footerColor: #fc007c;
 $footerHeight: 100px;
 $contentMinHeight: calc(100vh - #{$footerHeight} - #{$headerHeight});
+$contentMinHeightMaxWidthSmallest: calc(100vh - #{$footerHeight} - #{$headerHeightMaxWidthSmallest});
